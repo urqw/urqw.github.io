@@ -1,0 +1,22 @@
+User-agent: *
+# Allow all directories
+Allow: /
+# Disallow directories and files that are only related to the sources, but not to production
+Disallow: /UrqW/games/
+Disallow: /UrqW/md/
+Disallow: /UrqW/scripts/
+Disallow: /UrqW/.gitignore
+Disallow: /UrqW/.gitmodules
+Disallow: /UrqW/*.md
+Disallow: /UrqW/package.json
+Disallow: /UrqW/package-lock.json
+# The node_modules directory is not disallowed to reduce the risk of
+# a developer forgetting to explicitly allow a newly included library.
+# Disallow directories and files whose data is loaded programmatically from script code
+Disallow: /UrqW/quests/
+Disallow: /UrqW/games.json
+# Link to the sitemap
+Sitemap: https://urqw.github.io/UrqW/sitemap.xml
+# Ignore some get parameters in URLs
+# (Only for Yandex, but deliberately not in a special section for Yandex)
+Clean-param: lang&mode&encoding&debug /UrqW/
