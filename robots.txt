@@ -1,4 +1,6 @@
 User-agent: *
+# Alternative interface for development
+Disallow: /UrqW/index-dev.html
 # Link to the sitemap for UrqW instance
 Sitemap: https://urqw.github.io/UrqW/sitemap.xml
 # Ignore some get parameters in URLs of UrqW instance
