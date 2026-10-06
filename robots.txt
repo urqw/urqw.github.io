@@ -1,8 +1,25 @@
 User-agent: *
-# Alternative interface for development
-Disallow: /UrqW/index-dev.html
 # Link to the sitemap for UrqW instance
 Sitemap: https://urqw.github.io/UrqW/sitemap.xml
+# Directories containing development-only files
+Disallow: /UrqW/.git/
+Disallow: /UrqW/.github/
+Disallow: /UrqW/css/
+Disallow: /UrqW/games/
+Disallow: /UrqW/js/
+Disallow: /UrqW/locale/
+Disallow: /UrqW/md/
+Disallow: /UrqW/node_modules/
+Disallow: /UrqW/scripts/
+# Development-only files
+Disallow: /UrqW/.gitignore
+Disallow: /UrqW/.gitmodules
+Disallow: /UrqW/CHANGELOG.md
+Disallow: /UrqW/CONTRIBUTING.md
+Disallow: /UrqW/index-dev.html*
+Disallow: /UrqW/package.json
+Disallow: /UrqW/package-lock.json
+Disallow: /UrqW/README.md
 # Ignore some get parameters in URLs of UrqW instance
 # (Only for Yandex, but deliberately not in a special section for Yandex)
 Clean-param: lang&mode&encoding&debug /UrqW/
